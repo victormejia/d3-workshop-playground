@@ -7,8 +7,8 @@
 /* Global Styles */
 
 body {
-    margin-top: 100px;
     background-color: #222;
+    font-family: "Open Sans";
 }
 
 @media(min-width:768px) {
@@ -24,7 +24,14 @@ body {
 #page-wrapper {
     width: 100%;
     padding: 0;
-    background-color: #fff;
+    background-color: #D9E0E7;
+    height: 100vh;
+}
+
+.page-header {
+  font-size: 24px;
+  margin: 20px 0 20px;
+  border-bottom: none;
 }
 
 .huge {
@@ -40,6 +47,19 @@ body {
     #page-wrapper {
         padding: 10px;
     }
+}
+
+.navbar-inverse .navbar-brand {
+  font-size: 20px;
+  color: #2d353c;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-inverse .navbar-toggle {
+  background-color: #333;
 }
 
 /* Top Navigation */
@@ -110,6 +130,15 @@ ul.alert-dropdown {
     width: 200px;
 }
 
+.navbar-inverse {
+  background-color: #FFF;
+  border-color: #e7e7e7;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover  {
+  background: #348fe2;
+}
+
 /* Side Navigation */
 
 @media(min-width:768px) {
@@ -122,20 +151,29 @@ ul.alert-dropdown {
         border: none;
         border-radius: 0;
         overflow-y: auto;
-        background-color: #222;
+        /*background-color: #2d353c;*/
+        background-color: #1a2229;
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;
     }
 
+    .side-nav i {
+      font-size: 30px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
     .side-nav>li>a {
         width: 225px;
+        font-size: 12px;
     }
 
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #000 !important;
+        background-color: #232a2f !important;
+        color: #a8acb1;
     }
 }
 
@@ -224,4 +262,95 @@ ul.alert-dropdown {
 
 .panel-yellow > a:hover {
     color: #df8a13;
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-default > .panel-heading {
+  background-color: #242a30;
+  border-color: #242a30;
+  color: #fff;
+}
+
+.panel-default > .panel-body {
+  height: 388px;
+}
+
+
+.widget-chart {
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background: #2d353c;
+}
+
+.widget-chart .vis {
+  height: 350px;
+}
+
+.widget-chart .chart-title {
+    font-size: 18px!important;
+    color: #fff;
+    font-weight: 300!important;
+    margin: 2px 5px 7px
+}
+
+.widget-chart .chart-title small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #616D72;
+    color: rgba(255,255,255,.3)
+}
+
+.widget-chart .widget-chart-content {
+    padding: 15px;
+    /* margin-right:230px */
+}
+
+.widget-chart .widget-chart-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 230px;
+    padding: 15px
+}
+
+.widget-chart-sidebar .chart-number {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.widget-chart-sidebar .chart-number small {
+    font-size: 12px;
+    color: #616D72;
+    color: rgba(255,255,255,.3);
+    display: block
+}
+
+.widget-chart-sidebar .chart-legend {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 10px
+}
+
+.widget-chart-sidebar .chart-legend>li {
+    margin-bottom: 5px;
+    color: #fff
+}
+
+.widget-chart-sidebar .chart-legend>li span {
+    color: #616D72;
+    color: rgba(255,255,255,.3)
 }
