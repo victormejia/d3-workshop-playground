@@ -1,0 +1,30 @@
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+.timeseries .y.axis path {
+  display: none;
+}
+
+.timeseries .line {
+  fill: none;
+  stroke: #348fe2;
+  stroke-width: 2px;
+}
+
+.timeseries .axis .tick {
+  fill: #9d9d9d;
+  font-size: 12px;
+}
+
+.timeseries .axis path,
+.timeseries .axis line {
+  fill: none;
+  stroke: #242A30;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
