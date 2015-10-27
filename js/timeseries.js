@@ -16,6 +16,7 @@
   var xAxis = d3.svg.axis()
       .scale(x)
       .tickFormat(d3.time.format('%m/%d'))
+      .ticks(d3.time.day, 3)
       .orient("bottom");
 
   var yAxis = d3.svg.axis()
