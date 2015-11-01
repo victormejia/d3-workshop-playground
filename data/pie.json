@@ -1,0 +1,18 @@
+[
+  {
+    "browser":"Chrome",
+    "value": "45"
+  },
+  {
+    "browser":"Safari",
+    "value":"12"
+  },
+  {
+    "browser":"Firefox",
+    "value":"18"
+  },
+  {
+    "browser":"IE",
+    "value":"25"
+  }
+]

@@ -266,6 +266,7 @@ ul.alert-dropdown {
 
 .panel-default {
   border: none;
+  height: 100%;
 }
 
 .panel-default > .panel-heading {
@@ -275,7 +276,9 @@ ul.alert-dropdown {
 }
 
 .panel-default > .panel-body {
-  height: 388px;
+  height: 358px;
+  padding: 0px;
+  margin: 15px;
 }
 
 
