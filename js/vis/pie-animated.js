@@ -52,12 +52,13 @@
       .data(pie(data));
 
     // nice color scale
-    var color = d3.scale.category20();
+    // var color = d3.scale.category20c();
+    var color = ['#5DA4ED', '#348DE8', '#8D95C9', '#717BBA', '#5A6295'];
 
     // transition new data
     arcs.enter().append('path')
       .attr('class', 'arc')
-      .attr('fill', function (d, i) { return color(i); })
+      .attr('fill', function (d, i) { return color[i]; })
       .each(function (d) { this._current = { startAngle: 0, endAngle: 0}; });
 
     // animate the data

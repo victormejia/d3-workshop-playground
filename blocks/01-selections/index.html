@@ -12,14 +12,14 @@
     <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/d3styles.css" media="screen" title="no title" charset="utf-8">
 
     <!-- Custom Fonts -->
-    <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
@@ -53,62 +53,65 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="/"><i class="ion-ios-speedometer-outline"></i> Dashboard</a>
+                        <a href="index.html"><i class="ion-ios-speedometer-outline"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="/practice"><i class="ion-ios-speedometer-outline"></i> Dashboard-Practice</a>
+                        <a href="index.html"><i class="ion-ios-speedometer-outline"></i> Dashboard-Practice</a>
                     </li>
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
                     <li>
-                        <a href="#" data-toggle="collapse" data-target="#demo"><i class="ion-wrench"></i> Building Blocks <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="ion-wrench"></i> Building Blocks <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="/blocks/01-selections">01 Selections</a>
+                                <a href="#">01 Selections</a>
                             </li>
                             <li>
-                                <a href="/blocks/02-data-binding">02 Data Binding</a>
+                                <a href="#">02 Data Binding</a>
                             </li>
                             <li>
-                                <a href="/blocks/03-drawing-svg">03 Drawing SVGs</a>
+                                <a href="#">03 Drawing SVGs</a>
                             </li>
                             <li>
-                                <a href="/blocks/04-updates">04 Updates</a>
+                                <a href="#">04 Colors</a>
                             </li>
                             <li>
-                                <a href="/blocks/05-transitions">05 Transitions</a>
+                                <a href="#">05 Updates</a>
                             </li>
                             <li>
-                                <a href="/blocks/06-interactivity">06 Interactivity</a>
+                                <a href="#">06 Transitions</a>
+                            </li>
+                            <li>
+                                <a href="#">07 Interactivity</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                      <a href="/scatter-plot"><i class="ion-ios-keypad-outline"></i> Scatter Plot</a>
+                      <a href="#"><i class="ion-ios-keypad-outline"></i> Scatter Plot</a>
                     </li>
                     <li>
-                      <a href="/linechart"><i class="ion-arrow-graph-up-right"></i> Line Chart</a>
+                      <a href="#"><i class="ion-arrow-graph-up-right"></i> Line Chart</a>
                     </li>
                     <li>
-                      <a href="/bar-chart"><i class="ion-stats-bars"></i> Bar Chart</a>
+                      <a href="#"><i class="ion-stats-bars"></i> Bar Chart</a>
                     </li>
                     <li>
                       <a href="#" data-toggle="collapse" data-target="#layouts"><i class="ion-ios-pie"></i> Layouts <i class="fa fa-fw fa-caret-down"></i></a>
                       <ul id="layouts" class="collapse">
                         <li>
-                          <a href="/layouts/pie">Pie Layout</a>
+                          <a href="#">Pie Layout</a>
                         </li>
                         <li>
-                          <a href="/layouts/stack">Stack Layout</a>
+                          <a href="#">Stack Layout</a>
                         </li>
                         <li>
-                          <a href="/layouts/force">Force Layout</a>
+                          <a href="#">Force Layout</a>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="/geomapping"><i class="ion-map"></i> Geomapping</a>
+                      <a href="#"><i class="ion-map"></i> Geomapping</a>
                     </li>
                 </ul>
             </div>
@@ -130,7 +133,7 @@
                 <!-- /.row -->
 
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <div class="widget-chart with-sidebar bg-black">
                       <div class="widget-chart-content">
                         <h4 class="chart-title">
@@ -143,7 +146,7 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Browser Breakdown</h3>
@@ -151,21 +154,6 @@
                           <div class="panel-body pie">
                           </div>
                       </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="widget-chart with-sidebar bg-black">
-                      <div class="widget-chart-content">
-                        <h4 class="chart-title">
-                          Visitor Analytics
-                          <small>punchcard</small>
-                        </h4>
-                        <div class="vis punchcard">
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
@@ -181,16 +169,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
     <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- vis -->
-    <script src="/js/d3.tip.js"></script>
-    <script src="/js/vis/timeseries.js"></script>
-    <script src="/js/vis/pie-animated.js"></script>
-    <script src="/js/vis/punchcard.js"></script>
+    <script src="js/vis/timeseries.js"></script>
+    <script src="js/vis/pie.js"></script>
 
 </body>
 

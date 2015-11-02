@@ -25,7 +25,7 @@ body {
     width: 100%;
     padding: 0;
     background-color: #D9E0E7;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .page-header {
@@ -186,6 +186,11 @@ ul.alert-dropdown {
     padding: 10px 15px 10px 38px;
     text-decoration: none;
     color: #999;
+}
+
+.side-nav>li.active>ul>li.active>a {
+  color: #fff;
+  background: #3498db;
 }
 
 .side-nav>li>ul>li>a:hover {

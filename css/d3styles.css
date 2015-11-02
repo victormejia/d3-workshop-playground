@@ -5,11 +5,17 @@
   shape-rendering: crispEdges;
 }
 
-
-.timeseries .y.axis path {
-  display: none;
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
 }
 
+/*timeseries*/
 .timeseries .line {
   fill: none;
   stroke: #348fe2;
@@ -22,9 +28,22 @@
 }
 
 .timeseries .axis path,
-.timeseries .axis line {
+.timeseries .axis line,
+.punchcard .axis path,
+.punchcard .axis line {
   fill: none;
-  stroke: #242A30;
+  stroke: #282F35;
   stroke-width: 1px;
   shape-rendering: crispEdges;
+}
+
+/*pie*/
+.pie text {
+  fill: #fff;
+}
+
+/*punchcard*/
+.punchcard .axis .tick {
+  fill: #DAE0E4;
+  font-size: 12px;
 }
