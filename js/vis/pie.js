@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  d3.json("/data/pie.json", function(error, data) {
+  d3.json("/data/browser.json", function(error, data) {
     data.forEach(function(d) {
       d.value = +d.value;
     });

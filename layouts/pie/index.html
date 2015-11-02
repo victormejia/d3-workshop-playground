@@ -61,8 +61,8 @@
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
-                    <li class="active">
-                        <a data-toggle="collapse" data-target="#demo"><i class="ion-wrench"></i> Building Blocks <i class="fa fa-fw fa-caret-down"></i></a>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#demo"><i class="ion-wrench"></i> Building Blocks <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="/blocks/01-selections">01 Selections</a>
@@ -93,7 +93,7 @@
                     <li>
                       <a href="/bar-chart"><i class="ion-stats-bars"></i> Bar Chart</a>
                     </li>
-                    <li>
+                    <li class="active">
                       <a data-toggle="collapse" data-target="#layouts"><i class="ion-ios-pie"></i> Layouts <i class="fa fa-fw fa-caret-down"></i></a>
                       <ul id="layouts" class="collapse">
                         <li>
@@ -117,7 +117,7 @@
 
         <div id="page-wrapper">
 
-            <div class="container-fluid" id="selections">
+            <div class="container-fluid">
 
                 <!-- Page Heading -->
                 <div class="row">
@@ -129,7 +129,21 @@
                 </div>
                 <!-- /.row -->
 
-                <script src="https://gist.github.com/victormejia/49c086813f8ca48f1dc8.js"></script>
+                <div class="row">
+
+                  <div class="col-lg-12">
+                    <div class="widget-chart darker">
+                      <div class="widget-chart-content">
+                        <h4 class="chart-title">
+                          Visitor Analytics
+                          <small>Pageviews</small>
+                        </h4>
+                        <div class="vis pie">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
             </div>
             <!-- /.container-fluid -->
@@ -148,7 +162,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
 
-    <script src="/js/blocks/01-selections.js"></script>
+    <!-- vis -->
+    <script src="/js/d3.tip.js"></script>
+    <script src="/js/vis/pie-animated.js"></script>
+
 </body>
 
 </html>
