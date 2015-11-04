@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -60,8 +61,8 @@
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
-                    <li>
-                        <a href="#" data-toggle="collapse" data-target="#demo"><i class="ion-wrench"></i> Building Blocks <i class="fa fa-fw fa-caret-down"></i></a>
+                    <li class="active">
+                        <a data-toggle="collapse" data-target="#demo"><i class="ion-wrench"></i> Building Blocks <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="/blocks/01-selections">01 Selections</a>
@@ -86,14 +87,14 @@
                     <li>
                       <a href="/scatter-plot"><i class="ion-ios-keypad-outline"></i> Scatter Plot</a>
                     </li>
-                    <li class="active">
+                    <li>
                       <a href="/linechart"><i class="ion-arrow-graph-up-right"></i> Line Chart</a>
                     </li>
                     <li>
                       <a href="/bar-chart"><i class="ion-stats-bars"></i> Bar Chart</a>
                     </li>
                     <li>
-                      <a href="#" data-toggle="collapse" data-target="#layouts"><i class="ion-ios-pie"></i> Layouts <i class="fa fa-fw fa-caret-down"></i></a>
+                      <a data-toggle="collapse" data-target="#layouts"><i class="ion-ios-pie"></i> Layouts <i class="fa fa-fw fa-caret-down"></i></a>
                       <ul id="layouts" class="collapse">
                         <li>
                           <a href="/layouts/pie">Pie Layout</a>
@@ -116,7 +117,7 @@
 
         <div id="page-wrapper">
 
-            <div class="container-fluid">
+            <div class="container-fluid" id="data-binding">
 
                 <!-- Page Heading -->
                 <div class="row">
@@ -128,13 +129,17 @@
                 </div>
                 <!-- /.row -->
 
+                <button id="btn-updateData" class="btn btn-default">Update Data</button>
+                <button id="btn-addData" class="btn btn-default">Add More Data</button>
+                <button id="btn-removeData" class="btn btn-default">Remove Data</button>
+
                 <div class="row">
                   <div class="col-lg-12">
-                    <div class="widget-chart with-sidebar bg-black">
+                    <div class="widget-chart">
                       <div class="widget-chart-content">
                         <h4 class="chart-title">
-                          Visitor Analytics
-                          <small>Pageviews</small>
+                          Drawing SVG
+                          <small>practice</small>
                         </h4>
                         <div class="vis timeseries">
                         </div>
@@ -142,6 +147,7 @@
                     </div>
                   </div>
                 </div>
+            </div>
             <!-- /.container-fluid -->
 
         </div>
@@ -158,9 +164,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
 
-    <!-- vis -->
-    <script src="/js/vis/timeseries.js"></script>
-
+    <script src="/js/blocks/03-drawing-svg-update.js"></script>
 </body>
 
 </html>

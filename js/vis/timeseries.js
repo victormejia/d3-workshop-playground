@@ -7,28 +7,6 @@
       width = elWidth - margin.left - margin.right,
       height = elHeight - margin.top - margin.bottom;
 
-  var x = d3.time.scale()
-      .range([0, width]);
-
-  var y = d3.scale.linear()
-      .range([height, 0]);
-
-  var xAxis = d3.svg.axis()
-      .scale(x)
-      .tickFormat(d3.time.format('%m/%d'))
-      .ticks(d3.time.day, 3)
-      .orient("bottom");
-
-  var yAxis = d3.svg.axis()
-      .scale(y)
-      .innerTickSize(-width)
-      .orient("left");
-
-  var line = d3.svg.line()
-      .interpolate('monotone')
-      .x(function(d) { return x(d.date); })
-      .y(function(d) { return y(d.value); });
-
   var svg = el.append("svg")
       .attr("width", elWidth)
       .attr("height", elHeight)
@@ -38,9 +16,30 @@
   d3.json("/data/timeseries.json", function(error, data) {
     if (error) throw error;
 
-    x.domain(d3.extent(data, function(d) { return d.date; }));
-    y.domain(d3.extent(data, function(d) { return d.value; }));
+    var x = d3.time.scale()
+        .range([0, width])
+        .domain(d3.extent(data, function(d) { return d.date; }));
 
+    var y = d3.scale.linear()
+        .range([height, 0])
+        .domain(d3.extent(data, function(d) { return d.value; }));
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .tickFormat(d3.time.format('%m/%d'))
+        .ticks(d3.time.day, 3)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .innerTickSize(-width)
+        .orient("left");
+
+    var line = d3.svg.line()
+        .interpolate('monotone')
+        .x(function(d) { return x(d.date); })
+        .y(function(d) { return y(d.value); });
+        
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
