@@ -1,8 +1,14 @@
 .axis path,
 .axis line {
   fill: none;
-  stroke: #000;
+  stroke: #282F35;
+  stroke-width: 1px;
   shape-rendering: crispEdges;
+}
+
+.axis .tick {
+  fill: #DAE0E4;
+  font-size: 12px;
 }
 
 .d3-tip {
@@ -27,23 +33,7 @@
   font-size: 12px;
 }
 
-.timeseries .axis path,
-.timeseries .axis line,
-.punchcard .axis path,
-.punchcard .axis line {
-  fill: none;
-  stroke: #282F35;
-  stroke-width: 1px;
-  shape-rendering: crispEdges;
-}
-
 /*pie*/
 .pie text {
   fill: #fff;
-}
-
-/*punchcard*/
-.punchcard .axis .tick {
-  fill: #DAE0E4;
-  font-size: 12px;
 }

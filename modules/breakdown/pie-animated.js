@@ -24,7 +24,7 @@
   });
 
   function visualize(data) {
-    // code heer
+    // code here
   }
 
 }());
