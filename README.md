@@ -1,4 +1,4 @@
-# D3 Workshop Playground
+# D3 Workshop - Analytics Dashboard
 
 Demo analytics dashboard used in a full-day workshop on D3.js!
 
