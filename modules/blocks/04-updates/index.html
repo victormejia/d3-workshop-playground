@@ -52,7 +52,7 @@
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav side-nav">
-        <li>
+        <li class="active">
           <a href="/"><i class="ion-ios-speedometer-outline"></i> Dashboard</a>
         </li>
         <li>
@@ -87,7 +87,7 @@
         <li>
           <a href="/modules/products-purchased"><i class="ion-stats-bars"></i> Products Purchased</a>
         </li>
-        <li class="active">
+        <li>
           <a href="/modules/breakdown"><i class="ion-ios-pie"></i> Breakdown</a>
         </li>
         <li>
@@ -104,18 +104,28 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <div class="widget-chart darker">
+          <button id="btn-updateData" class="btn btn-default">Update Data</button>
+          <button id="btn-addData" class="btn btn-default">Add More Data</button>
+          <button id="btn-removeData" class="btn btn-default">Remove Data</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="widget-chart">
             <div class="widget-chart-content">
               <h4 class="chart-title">
-                Browser Statistics
-                <small>breakdown</small>
+                Drawing SVG
+                <small>practice</small>
               </h4>
-              <div class="vis pie">
+              <div class="vis">
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <script src="https://gist.github.com/victormejia/b5be8eef6fe36c7bc2d5.js"></script>
 
     </div>
     <!-- /.container-fluid -->
@@ -135,7 +145,7 @@
 <script src="/js/bootstrap.collapse.min.js"></script>
 
 <!-- vis -->
-<script src="pie-animated.js"></script>
+<script src="drawing-svg-update.js"></script>
 
 </body>
 
