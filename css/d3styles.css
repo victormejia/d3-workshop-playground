@@ -37,3 +37,15 @@
 .pie text {
   fill: #fff;
 }
+
+
+.custom-tooltip {
+  visibility: hidden;
+  fill: #39393d;
+}
+
+.custom-tooltip text {
+  fill: white;;
+  font-size: 12px;
+  shape-rendering: crispEdges;
+}
