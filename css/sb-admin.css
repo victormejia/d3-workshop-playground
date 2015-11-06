@@ -166,6 +166,10 @@ body {
   height: 350px;
 }
 
+.widget-chart .vis.geomap {
+  height: 600px;
+}
+
 .widget-chart .chart-title {
     font-size: 18px!important;
     color: #fff;
