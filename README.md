@@ -15,4 +15,6 @@ First of all, make sure you have [Git](https://git-scm.com/) and [Node](https://
 
 It should launch your default browser and you should see the following:
 
+![Analytics Dashboard](https://raw.githubusercontent.com/victormejia/d3-workshop-playground/master/dashboard.png)
+
 If you're curious to what we're going to build, append `/complete` to your url.
