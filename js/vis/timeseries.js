@@ -15,6 +15,10 @@
 
   d3.json("/data/timeseries.json", function(error, data) {
     if (error) throw error;
+    visualize(data);
+  });
+
+  function visualize(data) {
 
     var x = d3.time.scale()
         .range([0, width])
@@ -39,7 +43,7 @@
         .interpolate('monotone')
         .x(function(d) { return x(d.date); })
         .y(function(d) { return y(d.value); });
-        
+
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
@@ -63,5 +67,5 @@
         .duration(400)
         .ease("linear")
         .attr("stroke-dashoffset", 0);
-  });
+  }
 }());
