@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin - Bootstrap Admin Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="/css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/d3styles.css" media="screen" title="no title" charset="utf-8">
+
+  <!-- Custom Fonts -->
+  <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><i class="ion-flash"></i> The Grid</a>
+    </div>
+
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li class="active">
+          <a href="/"><i class="ion-ios-speedometer-outline"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="/practice"><i class="ion-ios-speedometer-outline"></i> Dashboard-Practice</a>
+        </li>
+        <li>
+          <a data-toggle="collapse" data-target="#demo"><i class="ion-wrench"></i> Building Blocks <i class="fa fa-fw fa-caret-down"></i></a>
+          <ul id="demo" class="collapse">
+            <li>
+              <a href="/modules/blocks/01-selections">01 Selections</a>
+            </li>
+            <li>
+              <a href="/modules/blocks/02-data-binding">02 Data Binding</a>
+            </li>
+            <li>
+              <a href="/modules/blocks/03-drawing-svg">03 Drawing SVGs</a>
+            </li>
+            <li>
+              <a href="/modules/blocks/04-updates">04 Updates</a>
+            </li>
+            <li>
+              <a href="/modules/blocks/05-transitions">05 Transitions</a>
+            </li>
+            <li>
+              <a href="/modules/blocks/06-interactivity">06 Interactivity</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/modules/punchcard"><i class="ion-ios-keypad-outline"></i> Punchcard</a>
+        </li>
+        <li>
+          <a href="/modules/pageviews"><i class="ion-arrow-graph-up-right"></i> Pageviews</a>
+        </li>
+        <li>
+          <a href="/modules/products-purchased"><i class="ion-stats-bars"></i> Products Purchased</a>
+        </li>
+        <li>
+          <a href="/modules/breakdown"><i class="ion-ios-pie"></i> Breakdown</a>
+        </li>
+        <li>
+          <a href="/geomapping"><i class="ion-map"></i> Geomapping</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+  <div id="page-wrapper">
+
+    <div class="container-fluid">
+
+      <!-- Page Heading -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">
+            Dashboard <small>Statistics Overview</small>
+          </h1>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!--<button id="btn-updateData" class="btn btn-default">Update Data</button>-->
+      <!--<button id="btn-addData" class="btn btn-default">Add More Data</button>-->
+      <!--<button id="btn-removeData" class="btn btn-default">Remove Data</button>-->
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="widget-chart">
+            <div class="widget-chart-content">
+              <h4 class="chart-title">
+                Drawing SVG
+                <small>practice</small>
+              </h4>
+              <div class="vis">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://gist.github.com/victormejia/b5be8eef6fe36c7bc2d5.js"></script>
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- vis -->
+<script src="/js/blocks/03-drawing-svg.js"></script>
+
+</body>
+
+</html>
