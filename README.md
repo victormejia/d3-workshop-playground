@@ -2,6 +2,8 @@
 
 Demo analytics dashboard used in a full-day workshop on D3.js!
 
+![Analytics Dashboard](https://raw.githubusercontent.com/victormejia/d3-workshop-playground/master/dashboard-complete.png)
+
 ## Getting Started
 
 First of all, make sure you have [Git](https://git-scm.com/) and [Node](https://nodejs.org/en/) installed. Then, follow these instructions in a command prompt:
