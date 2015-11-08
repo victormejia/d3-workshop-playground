@@ -45,11 +45,12 @@
       })
       .attr('cy', height/2)
       .transition()
-      .duration(1000)
-      .delay(function(d,i) {
-        return i * 100;
-      })
-      .attr('r', function(d, i) {
-        return d.value;
-      })
+        .delay(function(d,i) {
+          return i * 200;
+        })
+        .ease('bounce')
+        .duration(1000)
+        .attr('r', function(d, i) {
+          return d.value;
+        });
 }());

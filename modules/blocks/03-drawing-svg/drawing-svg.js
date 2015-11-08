@@ -33,15 +33,22 @@
     }
   ];
 
-  svg.selectAll('.point')
+  var selection = svg.selectAll('.point')
     .data(data)
-    .enter()
+    .enter();
+
+  selection
     .append('circle')
       .attr('class', 'point')
       .attr('r', function(d, i) {
         return d.value;
       })
-      .attr('fill', '#8D94CB')
+      .attr('fill', function(d, i) {
+        if (d.value > 15 ) {
+          return '#8D94CB';
+        }
+        return 'white';
+      })
       .attr('cx', function(d, i) {
         return i * 100;
       })
