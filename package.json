@@ -1,0 +1,8 @@
+{
+  "name": "d3-workshop",
+  "author": "Victor Mejia",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}
